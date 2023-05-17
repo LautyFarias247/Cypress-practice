@@ -6,6 +6,6 @@ describe("Primera tanda de test de sumas ", () => {
   });
 
   it("el resultado es true", () => {
-		expect(true).to.equal(true)
-	});
+    expect(true).to.equal(true);
+  });
 });

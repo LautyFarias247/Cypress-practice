@@ -1,4 +1,4 @@
-describe("ingreso de usuario", () => {
+describe("crear cuenta", () => {
   beforeEach(() => {
     cy.visit("https://automationexercise.com");
   });
@@ -27,12 +27,12 @@ describe("ingreso de usuario", () => {
     cy.get('[data-qa="state"]').type("california");
     cy.get('[data-qa="country"]').select(5);
     cy.get('[data-qa="city"]').type("lomas de zamora pa");
-    cy.get('[data-qa="zipcode"]').type("909090")
-		cy.get('[data-qa="mobile_number"]').type("123125125136")
-		cy.get('[data-qa="create-account"]').click()
-		cy.get('b')
-		cy.get('[data-qa="continue-button"]').click()
-		cy.get('.shop-menu > .nav > :nth-child(5) > a').click()
-		cy.get('[data-qa="continue-button"]').click()
+    cy.get('[data-qa="zipcode"]').type("909090");
+    cy.get('[data-qa="mobile_number"]').type("123125125136");
+    cy.get('[data-qa="create-account"]').click();
+    cy.get("b");
+    cy.get('[data-qa="continue-button"]').click();
+    cy.get(".shop-menu > .nav > :nth-child(5) > a").click();
+    cy.get('[data-qa="continue-button"]').click();
   });
 });
